@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+
 body {
 	background-image:url('truck.jpeg');
 	background-repeat:no-repeat;
@@ -6,9 +10,12 @@ body {
 }
 
 h1 {
-	font-family: 'Lobster', Georgia, Times, serif;
 	font-size: 100px;
 	line-height: 110px;
+}
+
+h1, h3.resultsh {
+	font-family: 'Lobster', Georgia, Times, serif;
 }
 
 h2 {
@@ -17,13 +24,17 @@ h2 {
 	line-height: 30px;
 }
 
-.homecontainer {
+h3.resultsh {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.homecontainer, .resultscontainer {
 	text-align: center;
 	background: rgba(255,255,255,0.8);
 	padding: 30px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
-	max-width: 675px;
 	border: 2px solid #A8A8A8;
 }
 	.homecontainer h3 {
@@ -35,13 +46,28 @@ h2 {
 		width: 100%;
 	}
 
-.jumbotron {
-	background-image: none;
-	color: black;
+.homecontainer {
+	max-width: 675px;
 }
 
 .hspace {
 	margin-bottom: 15px;
+}
+
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #A8A8A8;
+}
+
+input.ilong {
+	width: 450px;
+}
+
+input.ishort {
+	width: 200px;
 }
 
 input.maininput {
@@ -49,6 +75,15 @@ input.maininput {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	padding-left: 13px;
+}
+
+.jumbotron {
+	background-image: none;
+	color: black;
+}
+
+.resultscontainer {
+	max-width: 950px;
 }
 
 .spacer20 {
