@@ -197,9 +197,9 @@
 					});
 				</script>
 			<div id="meter"><div><span>No match</span><span>Best match</span></div></div>
+			
+			<footer><p>&copy; Copyright 2012 Kelli Street. All rights reserved.</p><p class="social"><a href="https://www.facebook.com/pages/Kelli-Street/115198165297976?ref=hl"></a><a href="https://twitter.com/KelliStreet"></a></p></footer>
 	</div>
-
-	<footer>&copy; Copyright 2012 Kelli Street. All rights reserved.</footer>
 
 	<!-- Le javascript
 	================================================== -->

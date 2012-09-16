@@ -9,7 +9,7 @@ body {
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
 @media (min-width: 980px) {
-	body { padding: 80px 0 40px 0; }
+	body { padding: 80px 0; }
 }
 	body > .navbar .brand {
 		float: left;
@@ -34,6 +34,7 @@ footer {
 	text-shadow: 0 1px 2px #000;
 	opacity: 0.9;
 	font-size: 16px;
+	bottom: -80px;
 }
 [class^="icon-"], [class*=" icon-"] {
 	margin-right: 3px;
@@ -66,7 +67,6 @@ h3.resultsh {
 	border-radius: 8px;
 	background: rgba(255,255,255,0.8);
 	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
-	overflow: hidden;
 }
 .homecontainer {
 	padding: 30px;
@@ -84,7 +84,7 @@ h3.resultsh {
 	border-radius: 8px;
 	background: rgba(255,255,255,0.8);
 	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 .resultscontainer {
@@ -359,3 +359,25 @@ input.maininput {
 	margin-left: 0px;
 	width: 28%;
 }
+
+.container {
+	position: relative;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	text-align: left;
+	left: 0px;
+}
+footer p {
+	float: left;
+}
+.social {
+	float: right;
+	height: 26px;
+	background: url(social.png) no-repeat center;
+}
+	.social a {
+		width: 26px; height: 26px;
+		display: inline-block;
+	}
