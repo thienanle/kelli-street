@@ -30,7 +30,7 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="bs/docs/assets/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="bs/docs/assets/ico/apple-touch-icon-57-precomposed.png">
 
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBrikYEHCgBxN8l4XS7I7Me8Igvbuw6bug&sensor=false"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBrikYEHCgBxN8l4XS7I7Me8Igvbuw6bug&sensor=false"></script>
     <script type="text/javascript">
         function initialize() {
             var mapOptions = {
@@ -52,22 +52,48 @@
             });
         }
     </script>
-    <style type="text/css">
-        #map_canvas { height: 100% }
-    </style>
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar" onload="initialize()">
+	
+	<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Kelli Street</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+	            <a href="./index.html">Sign In</a>
+	          </li>
+			  <li>
+                <a href="./index.html">Help</a>
+              </li>
+            </ul>
+          </div><!-- .nav-collapse collapse -->
+        </div>
+      </div>
+    </div>
+	
 		<div class="container resultscontainer">
 			<ul class="breadcrumb">
 			  <li><a href="#">Home</a> <span class="divider">&gt;</span></li>
 			</ul>
 			<h3 class="resultsh">Find Your Neighborhood</h3>
 			<p>(click on the map to explore your neighborhood)</p>
-		
+			
 			<div class="spacer20"></div>
 			
-            <div id="map_canvas" style="width:800px; height:600px"></div>
+			<div id="map_canvas"></div>
+			<div id="mapsidebarcontainer">
+				<div id="mapsidebar">Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat.</div>
+			</div>
 	</div>
 
 	<!-- Le javascript
