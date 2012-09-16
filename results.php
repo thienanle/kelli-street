@@ -181,7 +181,6 @@
 
         maps[index1].style.opacity = 1 - t;
         maps[index2].style.opacity = t;
-        document.title = index1 + " " + index2 + " " + t;
     }
 
     // Add all of the sliders to an internal array
