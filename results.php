@@ -92,7 +92,35 @@
 			
 			<div id="map_canvas"></div>
 			<div id="mapsidebarcontainer">
-				<div id="mapsidebar">Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat.</div>
+				<div id="mapsidebar">
+					<ul style="list-style-type:none">
+						<li><strong>Environment</strong></li>
+						<li>Density
+							<input id="defaultSlider" type="range" min="0" max="100" />
+						</li>
+						<li>Open Space<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Traffic<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Age<input id="defaultSlider" type="range" min="0" max="100" /></li>
+					</ul>
+					<ul style="list-style-type:none">
+						<li><strong>Activities</strong></li>
+						<li>Restaurants<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Shopping<input id="defaultSlider" type="range" min="0" max="100" /></li>
+					</ul>
+					<ul style="list-style-type:none">
+						<li><strong>Transportation</strong></li>
+						<li>Walk<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Bicycle<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Public Transit<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Car<input id="defaultSlider" type="range" min="0" max="100" /></li>
+					</ul>
+					<ul style="list-style-type:none">
+						<li><strong>People</strong></li>
+						<li>Income<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Ethnicity<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>People/Household<input id="defaultSlider" type="range" min="0" max="100" /></li>
+					</ul>
+				</div>
 			</div>
 	</div>
 

@@ -79,27 +79,14 @@ h3.resultsh {
 	margin-bottom: 15px;
 }
 
-/*<<<<<<< HEAD*/
 #map_canvas {
 	width: 100%; height: 500px;
 }
-/*
-iframe.results1 {
-	margin-left: auto;
-	margin-right: auto;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 2px solid #A8A8A8;
+@media (min-width: 980px) {
+	#map_canvas {
+		width: 650px;
+	}
 }
-
-iframe.results2 {
-	margin-left: 0px;
-}
-
-input.ilong {
-	width: 450px;
->>>>>>> 08e38d54006b36c0819558efc41b2d720e81b5f2
-}*/
 iframe {
 	margin-bottom: -5px;
 }
@@ -122,16 +109,27 @@ input.maininput {
 	margin-bottom: 20px;
 }
 	#mapsidebar {
-		width: 230px; height: 480px;
-		margin: 10px;
+		width: 290px; height: 500px;
+/*		margin: 30px 10px;*/
 		padding: 25px;
 		box-sizing: border-box;
 		background: rgba(255,255,255,0.8);
 		-webkit-transition: -webkit-transform 0.4s ease;
 		position: relative;
 		top: -500px;
-		-webkit-transform: translateX(-250px);
+		-webkit-transform: translateX(-290px);
 		text-align: left;
+	}
+	#mapsidebar ul { margin-left: 0; }
+	#mapsidebar li { line-height: 26px; }
+	#mapsidebar input {
+		width: 50%;
+		float: right;
+		-webkit-appearance: none;
+		background-color: #eee;
+		border: 1px solid #aaa;
+		height: 17px; margin-top: 4px;
+		border-radius: 9px;
 	}
 
 .navbar {
