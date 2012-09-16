@@ -27,7 +27,6 @@ body {
 	text-align: left;
 }
 
-<<<<<<< HEAD
 footer {
 	color: #fff;
 	text-align: center;
@@ -35,11 +34,10 @@ footer {
 	text-shadow: 0 1px 2px #000;
 	opacity: 0.9;
 	font-size: 16px;
-=======
+}
 [class^="icon-"], [class*=" icon-"] {
 	margin-right: 3px;
 	margin-top: -1px;
->>>>>>> neighborhood page
 }
 
 h1 {

@@ -55,31 +55,34 @@
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar" onload="initialize()">
-	
+
 	<!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="./index.html">Kelli Street</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li>
-	            <a href="./index.html">Sign In</a>
-	          </li>
-			  <li>
-                <a href="./index.html">Help</a>
-              </li>
-            </ul>
-          </div><!-- .nav-collapse collapse -->
-        </div>
-      </div>
-    </div>
+	================================================== -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="./index.html">Kelli Street</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li>
+							<a href="./index.html"><i class="icon-user"></i>Sign In</a>
+						</li>
+						<li>
+							<a href="./index.html"><i class="icon-list"></i>Neighborhood Forum</a>
+						</li>
+						<li>
+							<a href="./index.html"><i class="icon-question-sign"></i>Help</a>
+						</li>
+					</ul>
+				</div><!-- .nav-collapse collapse -->
+			</div>
+		</div>
+	</div>
 	
 		<div class="container resultscontainer">
 			<ul class="breadcrumb">
