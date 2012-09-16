@@ -190,6 +190,7 @@
         var e = document.getElementById(sliderName);
         sliders.push(e);
         e.onchange = function() { onSliderChange(); };
+        sliders[i-1].value = Math.floor(Math.random() * 100);
     }
 
     for (var i = 1; i <= numImages; ++i) {
@@ -204,6 +205,7 @@
         val = (val % 100) / (100 / (numImages));
         return val;
     }
+    onSliderChange();
 
 </script>
 </html>
