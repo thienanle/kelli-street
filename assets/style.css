@@ -1,5 +1,5 @@
 html, body {
-	height: 100%;
+	min-height: 100%;
 }
 
 body {
@@ -8,13 +8,31 @@ body {
 	background-size: cover;
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
+@media (min-width: 980px) {
+	body { padding: 80px 0 40px 0; }
+}
+	body > .navbar .brand {
+		float: left;
+		margin: 0;
+		color: #aaa;
+		background: -webkit-gradient(linear, left top, left bottom, from(#08C), to(#fff));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+.breadcrumb {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#c9cecf));
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	text-align: left;
+}
 
 h1 {
 	font-size: 100px;
 	line-height: 110px;
 }
 
-h1, h3.resultsh {
+h1, h3.resultsh, .brand {
 	font-family: 'Lobster', Georgia, Times, serif;
 }
 
@@ -31,14 +49,21 @@ h3.resultsh {
 
 .homecontainer, .resultscontainer {
 	text-align: center;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 	background: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+.homecontainer {
 	padding: 30px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
-	border: 2px solid #A8A8A8;
+}
+.resultscontainer {
+	
 }
 	.homecontainer h3 {
-		width: 400px;
+		width: 90%;
+		max-width: 400px;
 		margin: 10px auto;
 /*		text-align: left;*/
 	}
@@ -55,31 +80,46 @@ h3.resultsh {
 }
 
 iframe {
-	margin-left: auto;
-	margin-right: auto;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 2px solid #A8A8A8;
-}
-
-input.ilong {
-	width: 450px;
-}
-
-input.ishort {
-	width: 200px;
+	width: 100%; height: 500px;
+	margin-bottom: -5px;
 }
 
 input.maininput {
 	height: 30px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	padding-left: 13px;
 }
 
 .jumbotron {
 	background-image: none;
 	color: black;
+}
+
+#mapsidebarcontainer {
+	float: right;
+	height: 0px; width: 0px;
+	margin-bottom: 20px;
+}
+	#mapsidebar {
+		width: 230px; height: 480px;
+		margin: 10px;
+		padding: 25px;
+		box-sizing: border-box;
+		background: rgba(255,255,255,0.8);
+		-webkit-transition: -webkit-transform 0.4s ease;
+		position: relative;
+		top: -500px;
+		-webkit-transform: translateX(-250px);
+		text-align: left;
+	}
+
+.navbar {
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+.nav-collapse.collapse {
+	float: right;
 }
 
 .resultscontainer {
