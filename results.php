@@ -96,29 +96,29 @@
 					<ul style="list-style-type:none">
 						<li><strong>Environment</strong></li>
 						<li>Density
-							<input id="defaultSlider" type="range" min="0" max="100" />
+							<input id="defaultSlider1" type="range" min="0" max="100" />
 						</li>
-						<li>Open Space<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Traffic<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Age<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Open Space<input id="defaultSlider2" type="range" min="0" max="100" /></li>
+						<li>Traffic<input id="defaultSlider3" type="range" min="0" max="100" /></li>
+						<li>Age<input id="defaultSlider4" type="range" min="0" max="100" /></li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>Activities</strong></li>
-						<li>Restaurants<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Shopping<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Restaurants<input id="defaultSlider5" type="range" min="0" max="100" /></li>
+						<li>Shopping<input id="defaultSlider6" type="range" min="0" max="100" /></li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>Transportation</strong></li>
-						<li>Walk<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Bicycle<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Public Transit<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Car<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Walk<input id="defaultSlider7" type="range" min="0" max="100" /></li>
+						<li>Bicycle<input id="defaultSlider8" type="range" min="0" max="100" /></li>
+						<li>Public Transit<input id="defaultSlider9" type="range" min="0" max="100" /></li>
+						<li>Car<input id="defaultSlider10" type="range" min="0" max="100" /></li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>People</strong></li>
-						<li>Income<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>Ethnicity<input id="defaultSlider" type="range" min="0" max="100" /></li>
-						<li>People/Household<input id="defaultSlider" type="range" min="0" max="100" /></li>
+						<li>Income<input id="defaultSlider11" type="range" min="0" max="100" /></li>
+						<li>Ethnicity<input id="defaultSlider12" type="range" min="0" max="100" /></li>
+						<li>People/Household<input id="defaultSlider13" type="range" min="0" max="100" /></li>
 					</ul>
 				</div>
 			</div>
@@ -148,4 +148,36 @@
 
 
 </body>
+<script type="text/javascript">
+    var numImages = 3;
+    function onSliderChange() {
+        var index2;
+        var val = interpolationValue();
+        var index1 = Math.floor(val);
+        var t = val - index1;
+        index1 = index1 % numImages;
+        index2 = (index1 + 1) % numImages;
+        index1 += 1;
+        index2 += 1;
+    }
+
+    // Add all of the sliders to an internal array
+    sliders = [];
+    for (var i = 1; i <= 13; ++i) {
+        var sliderName = "defaultSlider" + i;
+        var e = document.getElementById(sliderName);
+        sliders.push(e);
+        e.onchange = function() { onSliderChange(); };
+    }
+
+    function interpolationValue() {
+        val = 0;
+        for (var i = 0; i < sliders.length; ++i) {
+            val += Number(sliders[i].value);
+        }
+        val = (val % 100) / (100 / (numImages));
+        return val;
+    }
+
+</script>
 </html>
