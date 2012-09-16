@@ -162,7 +162,7 @@ input.maininput {
 		overflow:auto; -webkit-overflow-scrolling:touch;
 	}
 	#mapsidebar ul { margin-left: 0; }
-	#mapsidebar li { line-height: 26px; }
+	#mapsidebar li { line-height: 26px; border-bottom: 1px dotted #aaa; }
 	#mapsidebar input,
 	#mapsidebar .rankcontainer {
 		width: 50%;
@@ -171,15 +171,25 @@ input.maininput {
 	}
 	#mapsidebar input {
 		-webkit-appearance: none;
-		display: none;
 		background-color: #eee;
 		border: 1px solid #aaa;
 		border-radius: 9px;
+		display: none;
 	}
+	#mapsidebar.edit input {
+		display: block;
+	}
+		#mapsidebar.edit div {
+			display: none;
+		}
+		#mapsidebar.edit button {
+			color: rgb(0, 136, 204);
+		}
 	#mapsidebar .rankcontainer {
-				border-left: 1px dotted #aaa;
-				border-right: 1px dotted #aaa;
+/*				border-left: 1px dotted #aaa;*/
+/*				border-right: 1px dotted #aaa;*/
 				position: relative;
+				overflow: hidden;
 	}
 		#mapsidebar .line {
 			width: 2px; height: 100%; background-color: black;
@@ -191,7 +201,7 @@ input.maininput {
 			-webkit-transition: all 0.4s ease;
 		}
 	
-	#mapsidebar h4 {display:none;}
+	#mapsidebar h4 {display:none;margin-top:-5px;}
 	#mapsidebar.l1 .l1,
 	#mapsidebar.l2 .l2,
 	#mapsidebar.l3 .l3 {display: block;}
@@ -199,6 +209,54 @@ input.maininput {
 	#mapsidebar.l1 #bar1 {width:50px; -webkit-transform: translateX(20px);}
 	#mapsidebar.l2 #bar1 {width:20px; -webkit-transform: translateX(60px);}
 	#mapsidebar.l3 #bar1 {width:60px; -webkit-transform: translateX(25px);}
+	
+	#mapsidebar.l1 #bar2 {width:30px; -webkit-transform: translateX(50px);}
+	#mapsidebar.l2 #bar2 {width:70px; -webkit-transform: translateX(30px);}
+	#mapsidebar.l3 #bar2 {width:80px; -webkit-transform: translateX(25px);}
+	
+	#mapsidebar.l1 #bar3 {width:40px; -webkit-transform: translateX(60px);}
+	#mapsidebar.l2 #bar3 {width:80px; -webkit-transform: translateX(10px);}
+	#mapsidebar.l3 #bar3 {width:20px; -webkit-transform: translateX(45px);}
+	
+	#mapsidebar.l1 #bar4 {width:80px; -webkit-transform: translateX(20px);}
+	#mapsidebar.l2 #bar4 {width:20px; -webkit-transform: translateX(60px);}
+	#mapsidebar.l3 #bar4 {width:30px; -webkit-transform: translateX(55px);}
+	
+	#mapsidebar.l1 #bar5 {width:20px; -webkit-transform: translateX(90px);}
+	#mapsidebar.l2 #bar5 {width:35px; -webkit-transform: translateX(70px);}
+	#mapsidebar.l3 #bar5 {width:80px; -webkit-transform: translateX(5px);}
+	
+	#mapsidebar.l1 #bar6 {width:50px; -webkit-transform: translateX(20px);}
+	#mapsidebar.l2 #bar6 {width:20px; -webkit-transform: translateX(60px);}
+	#mapsidebar.l3 #bar6 {width:60px; -webkit-transform: translateX(25px);}
+	
+	#mapsidebar.l1 #bar7 {width:70px; -webkit-transform: translateX(40px);}
+	#mapsidebar.l2 #bar7 {width:27px; -webkit-transform: translateX(80px);}
+	#mapsidebar.l3 #bar7 {width:34px; -webkit-transform: translateX(65px);}
+	
+	#mapsidebar.l1 #bar8 {width:50px; -webkit-transform: translateX(30px);}
+	#mapsidebar.l2 #bar8 {width:10px; -webkit-transform: translateX(80px);}
+	#mapsidebar.l3 #bar8 {width:10px; -webkit-transform: translateX(105px);}
+	
+	#mapsidebar.l1 #bar9 {width:50px; -webkit-transform: translateX(20px);}
+	#mapsidebar.l2 #bar9 {width:20px; -webkit-transform: translateX(90px);}
+	#mapsidebar.l3 #bar9 {width:80px; -webkit-transform: translateX(15px);}
+	
+	#mapsidebar.l1 #bar10 {width:50px; -webkit-transform: translateX(70px);}
+	#mapsidebar.l2 #bar10 {width:60px; -webkit-transform: translateX(50px);}
+	#mapsidebar.l3 #bar10 {width:10px; -webkit-transform: translateX(105px);}
+	
+	#mapsidebar.l1 #bar11 {width:10px; -webkit-transform: translateX(100px);}
+	#mapsidebar.l2 #bar11 {width:20px; -webkit-transform: translateX(60px);}
+	#mapsidebar.l3 #bar11 {width:40px; -webkit-transform: translateX(65px);}
+	
+	#mapsidebar.l1 #bar12 {width:55px; -webkit-transform: translateX(50px);}
+	#mapsidebar.l2 #bar12 {width:100px; -webkit-transform: translateX(10px);}
+	#mapsidebar.l3 #bar12 {width:60px; -webkit-transform: translateX(45px);}
+	
+	#mapsidebar.l1 #bar13 {width:20px; -webkit-transform: translateX(70px);}
+	#mapsidebar.l2 #bar13 {width:40px; -webkit-transform: translateX(60px);}
+	#mapsidebar.l3 #bar13 {width:100px; -webkit-transform: translateX(5px);}
 	
 
 #meter {	

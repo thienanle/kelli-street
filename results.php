@@ -100,18 +100,10 @@
 					<div id="l2" style="top: 250px; left: 70%;"></div>
 					<div id="l3" style="top: 180px; width: 70px; left: 50%;"></div>
 				</div>
-				<script>
-					var $ = function(what) {
-						return document.getElementById(what);
-					}
-					$('maplinks').addEventListener('click', function(e){
-						var target = e.target;
-						document.getElementById('mapsidebar').className = target.id;
-					});
-				</script>
 			</div>
 			<div id="mapsidebarcontainer">
 				<div id="mapsidebar" class="l1">
+					<button id="idealBtn" class="btn btn-small" style="float:right; position: relative; top: -8px;">Edit ideals</button>
 					<h4 class="l1">Ballard</h4>
 					<h4 class="l3">Wallingford</h4>
 					<h4 class="l2">Madison Park</h4>
@@ -175,13 +167,30 @@
                             <input id="defaultSlider12" type="range" min="0" max="100" />
 							<div class="rankcontainer"><div id="bar12" class="bar"></div><div class="line" id="line12"></div></div>
                         </li>
-						<li>People/Household
+						<li>Household
                             <input id="defaultSlider13" type="range" min="0" max="100" />
 							<div class="rankcontainer"><div id="bar13" class="bar"></div><div class="line" id="line13"></div></div>
                         </li>
 					</ul>
 				</div>
-			</div><!-- #mapsidebarcontainer -->
+			</div><!-- #mapsidebarcontainer -->	
+				<script>
+					var $ = function(what) {
+						return document.getElementById(what);
+					}
+					$('maplinks').addEventListener('click', function(e){
+						var target = e.target;
+						document.getElementById('mapsidebar').className = target.id;
+					});
+					$('idealBtn').addEventListener('click', function(e){
+						if (document.getElementById('mapsidebar').classList.contains('edit')) {
+							document.getElementById('mapsidebar').className = 'l1';
+						}
+						else {
+							document.getElementById('mapsidebar').className += ' edit';
+						}
+					});
+				</script>
 			<div id="meter"><div><span>No match</span><span>Best match</span></div></div>
 	</div>
 
@@ -249,7 +258,7 @@
         sliders[i-1].value = Math.floor(Math.random() * 100);
 
         var ln = document.getElementById('line' + i);
-        ln.style.marginLeft = sliders[i-1].value / 100 * 122 + "px";
+        ln.style.marginLeft = sliders[i-1].value / 100 * 120 + "px";
     }
 
     for (var i = 1; i <= numImages; ++i) {
