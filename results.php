@@ -92,9 +92,9 @@
 			
 			<!-- <div id="map_canvas"></div> -->
 			<div id="map_canvas">
-				<div class="dummymap"></div>
-				<div class="dummymap"></div>
-				<div class="dummymap"></div>
+				<div id = "map1" class="dummymap1"></div>
+				<div id = "map2" class="dummymap2"></div>
+				<div id = "map3" class="dummymap3"></div>
 			</div>
 			<div id="mapsidebarcontainer">
 				<div id="mapsidebar">
@@ -156,6 +156,9 @@
 </body>
 <script type="text/javascript">
     var numImages = 3;
+    var maps = [];
+    var sliders = [];
+
     function onSliderChange() {
         var index2;
         var val = interpolationValue();
@@ -163,17 +166,26 @@
         var t = val - index1;
         index1 = index1 % numImages;
         index2 = (index1 + 1) % numImages;
-        index1 += 1;
-        index2 += 1;
+
+        for (var i = 0; i < maps.length; ++i) {
+            maps[i].style.opacity = 0;
+        }
+
+        maps[index1].style.opacity = t;
+        maps[index2].style.opacity = 1 - t;
+        document.title = index1 + " " + index2 + " " + t;
     }
 
     // Add all of the sliders to an internal array
-    sliders = [];
     for (var i = 1; i <= 13; ++i) {
         var sliderName = "defaultSlider" + i;
         var e = document.getElementById(sliderName);
         sliders.push(e);
         e.onchange = function() { onSliderChange(); };
+    }
+
+    for (var i = 1; i <= numImages; ++i) {
+        maps.push(document.getElementById("map" + i));
     }
 
     function interpolationValue() {
