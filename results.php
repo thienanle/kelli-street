@@ -85,9 +85,9 @@
 	</div>
 	
 		<div class="container resultscontainer">
-			<ul class="breadcrumb">
+			<!-- <ul class="breadcrumb">
 			  <li><a href="#">Home</a> <span class="divider">&gt;</span></li>
-			</ul>
+			</ul> -->
 			<h3 class="resultsh">Find Your Neighborhood</h3>
 			<p>(click on the map to explore your neighborhood)</p>
 			
@@ -109,9 +109,9 @@
 				<div id="mapsidebar" class="none">
 					<p class="noneText">Select a neighborhood to see how it compares.</p>
 					<button id="idealBtn" class="btn btn-small" style="float:right; position: relative; top: -8px;">Edit ideals</button>
-					<h4 class="l1">U-District</h4>
-					<h4 class="l3">Wallingford</h4>
-					<h4 class="l2">Madison Park</h4>
+					<h4 class="l1"><a href="neighborhoods.html">U-District</a></h4>
+					<h4 class="l3"><a href="">Wallingford</a></h4>
+					<h4 class="l2"><a href="">Madison Park</a></h4>
 					
 					<ul style="list-style-type:none">
 						<li><strong>Environment</strong></li>
