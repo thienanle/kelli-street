@@ -143,6 +143,11 @@ input.maininput {
 		cursor: pointer;
 	}
 
+#mapcontrols {
+	position: absolute;
+	z-index: 999;
+	margin: 10px;
+}
 #mapsidebarcontainer {
 	float: right;
 	height: 0px; width: 0px;
@@ -174,6 +179,12 @@ input.maininput {
 		background-color: #eee;
 		border: 1px solid #aaa;
 		border-radius: 9px;
+		display: none;
+	}
+	#mapsidebar .noneText {display:none; color: #ccc; text-shadow:0 -1px 0 #999;font-size:24px;text-align: center;line-height:36px; margin-top: 75%;}
+	#mapsidebar.none .noneText {display:block;}
+	#mapsidebar.none button,
+	#mapsidebar.none ul {
 		display: none;
 	}
 	#mapsidebar.edit input {

@@ -91,20 +91,22 @@
 			<div class="spacer20"></div>
 			
 			<!-- <div id="map_canvas"></div> -->
+			<img id="mapcontrols" src="assets/controls.png" />
 			<div id="map_canvas">
 				<div id="map1" class="dummymap1"></div>
 				<div id="map2" class="dummymap2"></div>
 				<div id="map3" class="dummymap3"></div>
 				<div id="maplinks">
-					<div id="l1" style="top: 50px; width:140px;height:180px;left: 20%;"></div>
+					<div id="l1" style="top: 140px; width:140px;height:120px;left: 60%;"></div>
 					<div id="l2" style="top: 250px; left: 70%;"></div>
 					<div id="l3" style="top: 180px; width: 70px; left: 50%;"></div>
 				</div>
 			</div>
 			<div id="mapsidebarcontainer">
-				<div id="mapsidebar" class="l1">
+				<div id="mapsidebar" class="none">
+					<p class="noneText">Select a neighborhood to see how it compares.</p>
 					<button id="idealBtn" class="btn btn-small" style="float:right; position: relative; top: -8px;">Edit ideals</button>
-					<h4 class="l1">Ballard</h4>
+					<h4 class="l1">U-District</h4>
 					<h4 class="l3">Wallingford</h4>
 					<h4 class="l2">Madison Park</h4>
 					
@@ -112,64 +114,64 @@
 						<li><strong>Environment</strong></li>
 						<li>Density
 							<input id="defaultSlider1" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar1" class="bar"></div><div class="line" id="line1"></div></div>
+							<div class="rankcontainer"><div id="bar1" class="btn-info bar"></div><div class="line" id="line1"></div></div>
 						</li>
 						<li>Open Space
                             <input id="defaultSlider2" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar2" class="bar"></div><div class="line" id="line2"></div></div>
+							<div class="rankcontainer"><div id="bar2" class="btn-info bar"></div><div class="line" id="line2"></div></div>
                         </li>
 						<li>Traffic
                             <input id="defaultSlider3" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar3" class="bar"></div><div class="line" id="line3"></div></div>
+							<div class="rankcontainer"><div id="bar3" class="btn-info bar"></div><div class="line" id="line3"></div></div>
                         </li>
 						<li>Age
                             <input id="defaultSlider4" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar4" class="bar"></div><div class="line" id="line4"></div></div>
+							<div class="rankcontainer"><div id="bar4" class="btn-info bar"></div><div class="line" id="line4"></div></div>
                         </li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>Activities</strong></li>
 						<li>Restaurants
                             <input id="defaultSlider5" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar5" class="bar"></div><div class="line" id="line5"></div></div>
+							<div class="rankcontainer"><div id="bar5" class="btn-info bar"></div><div class="line" id="line5"></div></div>
                         </li>   
 						<li>Shopping
                             <input id="defaultSlider6" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar6" class="bar"></div><div class="line" id="line6"></div></div>
+							<div class="rankcontainer"><div id="bar6" class="btn-info bar"></div><div class="line" id="line6"></div></div>
                         </li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>Transportation</strong></li>
 						<li>Walk
                             <input id="defaultSlider7" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar7" class="bar"></div><div class="line" id="line7"></div></div>
+							<div class="rankcontainer"><div id="bar7" class="btn-info bar"></div><div class="line" id="line7"></div></div>
                         </li>
 						<li>Bicycle
                             <input id="defaultSlider8" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar8" class="bar"></div><div class="line" id="line8"></div></div>
+							<div class="rankcontainer"><div id="bar8" class="btn-info bar"></div><div class="line" id="line8"></div></div>
                         </li>
 						<li>Public Transit
                             <input id="defaultSlider9" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar9" class="bar"></div><div class="line" id="line9"></div></div>
+							<div class="rankcontainer"><div id="bar9" class="btn-info bar"></div><div class="line" id="line9"></div></div>
                         </li>
 						<li>Car
                             <input id="defaultSlider10" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar10" class="bar"></div><div class="line" id="line10"></div></div>
+							<div class="rankcontainer"><div id="bar10" class="btn-info bar"></div><div class="line" id="line10"></div></div>
                         </li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>People</strong></li>
 						<li>Income
                             <input id="defaultSlider11" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar11" class="bar"></div><div class="line" id="line11"></div></div>
+							<div class="rankcontainer"><div id="bar11" class="btn-info bar"></div><div class="line" id="line11"></div></div>
                         </li>
 						<li>Ethnicity
                             <input id="defaultSlider12" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar12" class="bar"></div><div class="line" id="line12"></div></div>
+							<div class="rankcontainer"><div id="bar12" class="btn-info bar"></div><div class="line" id="line12"></div></div>
                         </li>
 						<li>Household
                             <input id="defaultSlider13" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar13" class="bar"></div><div class="line" id="line13"></div></div>
+							<div class="rankcontainer"><div id="bar13" class="btn-info bar"></div><div class="line" id="line13"></div></div>
                         </li>
 					</ul>
 				</div>
