@@ -164,6 +164,14 @@
         var val = interpolationValue();
         var index1 = Math.floor(val);
         var t = val - index1;
+        if (t < 0.5) {
+            t = Math.pow(t, 1.25);
+        }
+        else {
+            t = 1 - t;
+            t = Math.pow(t, 1.25);
+            t = 1 - t;
+        }
         index1 = index1 % numImages;
         index2 = (index1 + 1) % numImages;
 
@@ -171,8 +179,8 @@
             maps[i].style.opacity = 0;
         }
 
-        maps[index1].style.opacity = t;
-        maps[index2].style.opacity = 1 - t;
+        maps[index1].style.opacity = 1 - t;
+        maps[index2].style.opacity = t;
         document.title = index1 + " " + index2 + " " + t;
     }
 
