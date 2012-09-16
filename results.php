@@ -112,6 +112,10 @@
 			</div>
 			<div id="mapsidebarcontainer">
 				<div id="mapsidebar" class="l1">
+					<h4 class="l1">Ballard</h4>
+					<h4 class="l3">Wallingford</h4>
+					<h4 class="l2">Madison Park</h4>
+					
 					<ul style="list-style-type:none">
 						<li><strong>Environment</strong></li>
 						<li>Density
