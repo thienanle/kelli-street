@@ -33,7 +33,7 @@
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBrikYEHCgBxN8l4XS7I7Me8Igvbuw6bug&sensor=false"></script>
     <script type="text/javascript">
         function initialize() {
-            var mapOptions = {
+            /*var mapOptions = {
                 center: google.maps.LatLng(0, 0),
                 zoom: 8,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -49,7 +49,7 @@
                 else {
                     alert("Geocode was not successful: " + status);
                 }
-            });
+            });*/
         }
     </script>
 </head>
@@ -90,7 +90,12 @@
 			
 			<div class="spacer20"></div>
 			
-			<div id="map_canvas"></div>
+			<!-- <div id="map_canvas"></div> -->
+			<div id="map_canvas">
+				<div class="dummymap"></div>
+				<div class="dummymap"></div>
+				<div class="dummymap"></div>
+			</div>
 			<div id="mapsidebarcontainer">
 				<div id="mapsidebar">
 					<ul style="list-style-type:none">
@@ -121,7 +126,8 @@
 						<li>People/Household<input id="defaultSlider" type="range" min="0" max="100" /></li>
 					</ul>
 				</div>
-			</div>
+			</div><!-- #mapsidebarcontainer -->
+			<div id="meter"><div><span>No match</span><span>Best match</span></div></div>
 	</div>
 
 	<!-- Le javascript
