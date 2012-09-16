@@ -101,18 +101,22 @@
 					<div id="l3" style="top: 180px; width: 70px; left: 50%;"></div>
 				</div>
 				<script>
-					document.getElementById('maplinks').addEventListener('click', function(e){
+					var $ = function(what) {
+						return document.getElementById(what);
+					}
+					$('maplinks').addEventListener('click', function(e){
 						var target = e.target;
-						console.log(target.id);
+						document.getElementById('mapsidebar').className = target.id;
 					});
 				</script>
 			</div>
 			<div id="mapsidebarcontainer">
-				<div id="mapsidebar">
+				<div id="mapsidebar" class="l1">
 					<ul style="list-style-type:none">
 						<li><strong>Environment</strong></li>
 						<li>Density
 							<input id="defaultSlider1" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar1" class="bar"></div><div class="line"></div></div>
 						</li>
 						<li>Open Space<input id="defaultSlider2" type="range" min="0" max="100" /></li>
 						<li>Traffic<input id="defaultSlider3" type="range" min="0" max="100" /></li>

@@ -162,15 +162,38 @@ input.maininput {
 	}
 	#mapsidebar ul { margin-left: 0; }
 	#mapsidebar li { line-height: 26px; }
-	#mapsidebar input {
+	#mapsidebar input,
+	#mapsidebar .rankcontainer {
 		width: 50%;
 		float: right;
+		height: 17px; margin-top: 4px;
+	}
+	#mapsidebar input {
 		-webkit-appearance: none;
+		display: none;
 		background-color: #eee;
 		border: 1px solid #aaa;
-		height: 17px; margin-top: 4px;
 		border-radius: 9px;
 	}
+	#mapsidebar .rankcontainer {
+				border-left: 1px dotted #aaa;
+				border-right: 1px dotted #aaa;
+				position: relative;
+	}
+		#mapsidebar .line {
+			width: 2px; height: 100%; background-color: black;
+			position: absolute;
+		}
+		#mapsidebar .bar {
+			width: 20px; height: 90%; margin-top:5%; background-color: #ccc;
+			position: absolute;
+			-webkit-transition: all 0.4s ease;
+		}
+	
+	#mapsidebar.l1 #bar1 {width:50px; -webkit-transform: translateX(20px);}
+	#mapsidebar.l2 #bar1 {width:20px; -webkit-transform: translateX(60px);}
+	#mapsidebar.l3 #bar1 {width:60px; -webkit-transform: translateX(25px);}
+	
 
 #meter {	
 	width: 400px;
