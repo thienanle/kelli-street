@@ -116,29 +116,65 @@
 						<li><strong>Environment</strong></li>
 						<li>Density
 							<input id="defaultSlider1" type="range" min="0" max="100" />
-							<div class="rankcontainer"><div id="bar1" class="bar"></div><div class="line"></div></div>
+							<div class="rankcontainer"><div id="bar1" class="bar"></div><div class="line" id="line1"></div></div>
 						</li>
-						<li>Open Space<input id="defaultSlider2" type="range" min="0" max="100" /></li>
-						<li>Traffic<input id="defaultSlider3" type="range" min="0" max="100" /></li>
-						<li>Age<input id="defaultSlider4" type="range" min="0" max="100" /></li>
+						<li>Open Space
+                            <input id="defaultSlider2" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar2" class="bar"></div><div class="line" id="line2"></div></div>
+                        </li>
+						<li>Traffic
+                            <input id="defaultSlider3" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar3" class="bar"></div><div class="line" id="line3"></div></div>
+                        </li>
+						<li>Age
+                            <input id="defaultSlider4" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar4" class="bar"></div><div class="line" id="line4"></div></div>
+                        </li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>Activities</strong></li>
-						<li>Restaurants<input id="defaultSlider5" type="range" min="0" max="100" /></li>
-						<li>Shopping<input id="defaultSlider6" type="range" min="0" max="100" /></li>
+						<li>Restaurants
+                            <input id="defaultSlider5" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar5" class="bar"></div><div class="line" id="line5"></div></div>
+                        </li>   
+						<li>Shopping
+                            <input id="defaultSlider6" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar6" class="bar"></div><div class="line" id="line6"></div></div>
+                        </li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>Transportation</strong></li>
-						<li>Walk<input id="defaultSlider7" type="range" min="0" max="100" /></li>
-						<li>Bicycle<input id="defaultSlider8" type="range" min="0" max="100" /></li>
-						<li>Public Transit<input id="defaultSlider9" type="range" min="0" max="100" /></li>
-						<li>Car<input id="defaultSlider10" type="range" min="0" max="100" /></li>
+						<li>Walk
+                            <input id="defaultSlider7" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar7" class="bar"></div><div class="line" id="line7"></div></div>
+                        </li>
+						<li>Bicycle
+                            <input id="defaultSlider8" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar8" class="bar"></div><div class="line" id="line8"></div></div>
+                        </li>
+						<li>Public Transit
+                            <input id="defaultSlider9" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar9" class="bar"></div><div class="line" id="line9"></div></div>
+                        </li>
+						<li>Car
+                            <input id="defaultSlider10" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar10" class="bar"></div><div class="line" id="line10"></div></div>
+                        </li>
 					</ul>
 					<ul style="list-style-type:none">
 						<li><strong>People</strong></li>
-						<li>Income<input id="defaultSlider11" type="range" min="0" max="100" /></li>
-						<li>Ethnicity<input id="defaultSlider12" type="range" min="0" max="100" /></li>
-						<li>People/Household<input id="defaultSlider13" type="range" min="0" max="100" /></li>
+						<li>Income
+                            <input id="defaultSlider11" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar11" class="bar"></div><div class="line" id="line11"></div></div>
+                        </li>
+						<li>Ethnicity
+                            <input id="defaultSlider12" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar12" class="bar"></div><div class="line" id="line12"></div></div>
+                        </li>
+						<li>People/Household
+                            <input id="defaultSlider13" type="range" min="0" max="100" />
+							<div class="rankcontainer"><div id="bar13" class="bar"></div><div class="line" id="line13"></div></div>
+                        </li>
 					</ul>
 				</div>
 			</div><!-- #mapsidebarcontainer -->
@@ -207,6 +243,9 @@
         sliders.push(e);
         e.onchange = function() { onSliderChange(); };
         sliders[i-1].value = Math.floor(Math.random() * 100);
+
+        var ln = document.getElementById('line' + i);
+        ln.style.marginLeft = sliders[i-1].value / 100 * 122 + "px";
     }
 
     for (var i = 1; i <= numImages; ++i) {
