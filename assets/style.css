@@ -79,9 +79,27 @@ h3.resultsh {
 	margin-bottom: 15px;
 }
 
+/*<<<<<<< HEAD*/
 #map_canvas {
 	width: 100%; height: 500px;
 }
+/*
+iframe.results1 {
+	margin-left: auto;
+	margin-right: auto;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #A8A8A8;
+}
+
+iframe.results2 {
+	margin-left: 0px;
+}
+
+input.ilong {
+	width: 450px;
+>>>>>>> 08e38d54006b36c0819558efc41b2d720e81b5f2
+}*/
 iframe {
 	margin-bottom: -5px;
 }
