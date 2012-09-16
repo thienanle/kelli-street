@@ -95,6 +95,17 @@
 				<div class="dummymap"></div>
 				<div class="dummymap"></div>
 				<div class="dummymap"></div>
+				<div id="maplinks">
+					<div id="l1" style="top: 50px; width:140px;height:180px;left: 20%;"></div>
+					<div id="l2" style="top: 250px; left: 70%;"></div>
+					<div id="l3" style="top: 180px; width: 70px; left: 50%;"></div>
+				</div>
+				<script>
+					document.getElementById('maplinks').addEventListener('click', function(e){
+						var target = e.target;
+						console.log(target.id);
+					});
+				</script>
 			</div>
 			<div id="mapsidebarcontainer">
 				<div id="mapsidebar">
@@ -129,6 +140,8 @@
 			</div><!-- #mapsidebarcontainer -->
 			<div id="meter"><div><span>No match</span><span>Best match</span></div></div>
 	</div>
+
+	<footer>&copy; Copyright 2012 Kelli Street. All rights reserved.</footer>
 
 	<!-- Le javascript
 	================================================== -->

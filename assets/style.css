@@ -27,6 +27,15 @@ body {
 	text-align: left;
 }
 
+footer {
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	text-shadow: 0 1px 2px #000;
+	opacity: 0.9;
+	font-size: 16px;
+}
+
 h1 {
 	font-size: 100px;
 	line-height: 110px;
@@ -113,6 +122,15 @@ input.maininput {
 	background-image: none;
 	color: black;
 }
+
+#maplinks {
+	position: relative;
+}
+	#maplinks div {
+		width: 100px; height: 100px;
+		position: absolute;
+		cursor: pointer;
+	}
 
 #mapsidebarcontainer {
 	float: right;
