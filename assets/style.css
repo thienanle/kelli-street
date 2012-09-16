@@ -27,6 +27,7 @@ body {
 	text-align: left;
 }
 
+<<<<<<< HEAD
 footer {
 	color: #fff;
 	text-align: center;
@@ -34,6 +35,11 @@ footer {
 	text-shadow: 0 1px 2px #000;
 	opacity: 0.9;
 	font-size: 16px;
+=======
+[class^="icon-"], [class*=" icon-"] {
+	margin-right: 3px;
+	margin-top: -1px;
+>>>>>>> neighborhood page
 }
 
 h1 {
@@ -67,6 +73,22 @@ h3.resultsh {
 .homecontainer {
 	padding: 30px;
 }
+
+.navbar .nav {
+	margin: 0;
+}
+
+.ncontainer {
+	padding: 30px;
+	width: 786px;
+	text-align: center;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+
 .resultscontainer {
 	
 }
@@ -296,6 +318,15 @@ input.maininput {
 	float: right;
 }
 
+.progress {
+	width: 90%;
+}
+
+.progress-info .bar, .progress .bar-info {
+	text-align: left;
+	padding-left: 10px;
+}
+
 .resultscontainer {
 	max-width: 950px;
 }
@@ -303,4 +334,30 @@ input.maininput {
 .spacer20 {
 	height: 20px;
 	clear: both;
+}
+
+.tab-pane {
+	text-align: left;
+}
+
+.nav-tabs > li > a {
+	padding-top: 12px;
+}
+
+.tab-pane img {
+	float: left;
+	height: 151px;
+	margin-right: 15px;
+	margin-top: 5px;
+	border: 2px solid rgba(0,0,0,.5);
+}
+
+.tab-pane ul {
+	list-style: none;
+	margin-left: 0px;
+}
+
+.tab-pane .span3 {
+	margin-left: 0px;
+	width: 28%;
 }
